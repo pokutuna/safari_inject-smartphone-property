@@ -11,5 +11,5 @@ MobileSafariにあってSafariにないjsのプロパティをむりやり追加
 
 
 ## 実装について
-`DOMContentLoaded`が発火した時に`document.head`へ 
+`DOMContentLoaded`が発火した時に`document.head`へ
 上記のプロパティをセットする`script`要素をつっこむ

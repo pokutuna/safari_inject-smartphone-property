@@ -1,5 +1,7 @@
 var properties = {
     'window.ontouchstart': null,
+    'window.ontouchmove' : null,
+    'window.ontouchend'  : null,
     'window.orientation' : 0
 };
 

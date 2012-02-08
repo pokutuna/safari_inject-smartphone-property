@@ -2,6 +2,7 @@
 
 MobileSafariにあってSafariにないjsのプロパティをむりやり追加する
 
+[Download](https://github.com/downloads/pokutuna/safari_inject-smartphone-property/InjectSmartphoneProperty.safariextz)
 
 ## 対応してるプロパティ
 - `window.ontouchstart` : `null`

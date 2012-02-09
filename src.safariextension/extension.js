@@ -8,7 +8,7 @@ var properties = {
 var generateCode = function (prop) {
     var code = '';
     for (var p in prop) {
-        code += p + '=' + prop[p] + '; ';
+        code += p + '||(' + p + '=' + prop[p] + '); ';
     }
     return code;
 };
@@ -20,6 +20,16 @@ var appendScript = function (target) {
     target.appendChild(elem);
 };
 
-document.addEventListener('DOMContentLoaded', function () {
-    appendScript(document.head);
-});
+var execute = function () {
+    document.addEventListener('DOMContentLoaded', function () {
+        appendScript(document.head);
+    });
+};
+
+var messageCallback = function (event) {
+    if (event.name === "url" && event.message === true) execute();
+};
+
+safari.self.addEventListener('message', messageCallback, false);
+
+safari.self.tab.dispatchMessage('url', location.href);

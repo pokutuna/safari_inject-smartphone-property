@@ -22,3 +22,7 @@ Safariの`環境設定` → `拡張機能` からちょっとだけ設定がい�
 ## 実装について
 `DOMContentLoaded`が発火した時に`document.head`へ
 上記のプロパティをセットする`script`要素をつっこむ
+
+
+## Chrome版
+https://github.com/pokutuna/chrome_inject-smartphone-property
